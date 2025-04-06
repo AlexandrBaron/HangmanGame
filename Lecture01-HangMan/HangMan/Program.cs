@@ -17,7 +17,10 @@ namespace HangMan
 
             while (true)
             {
-                Console.SetCursorPosition(0, Console.CursorTop - Console.CursorTop);
+                if (OperatingSystem.IsWindows())
+                {
+                    Console.SetCursorPosition(0, Console.CursorTop - Console.CursorTop);
+                } 
                 hangman.Draw();
                 Console.WriteLine("Please enter a guess: " + stringBuilder.ToString());
                 string input = Console.ReadLine().ToLower();
@@ -120,7 +123,10 @@ namespace HangMan
 
         public static void WordGuessed(Hangman hangman, string wordToGuessOriginal)
         {
-            Console.SetCursorPosition(0, Console.CursorTop - Console.CursorTop);
+            if (OperatingSystem.IsWindows())
+            {
+                Console.SetCursorPosition(0, Console.CursorTop - Console.CursorTop);
+            }
             hangman.Draw();
             Console.WriteLine("Please enter a guess: " + wordToGuessOriginal);
             Console.ForegroundColor = ConsoleColor.Blue;

@@ -1,20 +1,14 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+﻿# FizzBuzz
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+A simple word-guessing game developed as a bootcamp project, featuring a console-style user interface.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Run via Docker
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+The Docker image is available publicly on Docker Hub:  
+👉 [alexbaron92/hangman](https://hub.docker.com/r/alexbaron92/hangman)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+### Pull and run it:
+
+```bash
+docker pull alexbaron92/hangman
+docker run -it alexbaron92/hangman
